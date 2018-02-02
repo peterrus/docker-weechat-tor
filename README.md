@@ -1,4 +1,5 @@
-====Weechat + Tor====
+Weechat + Tor
+=============
 
 Use tor proxy:
 ```
