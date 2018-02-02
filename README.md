@@ -14,12 +14,12 @@ docker build . -t weechat
 
 **Start attached**
 ```
-docker run -it --name weechat weechat
+docker run -it --name weechat --volume /<somepath>:/weechat-data weechat
 ```
 
 **Start detached**
 ```
-docker run -idt --name weechat --restart=always weechat
+docker run -idt --name weechat --restart=always --volume /<somepath>:/weechat-data weechat
 ```
 
 Attach with ```docker attach weechat```
