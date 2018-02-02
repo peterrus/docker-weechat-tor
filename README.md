@@ -1,4 +1,4 @@
-===Weechat + Tor===
+====Weechat + Tor====
 
 Use tor proxy:
 ```
@@ -7,13 +7,19 @@ Use tor proxy:
 ```
 
 **Build**
-```docker build . -t weechat```
+```
+docker build . -t weechat
+```
 
 **Start attached**
-```docker run -it --name weechat weechat```
+```
+docker run -it --name weechat weechat
+```
 
 **Start detached**
-```docker run -idt --name weechat --restart=always weechat```
+```
+docker run -idt --name weechat --restart=always weechat
+```
 
 Attach with ```docker attach weechat```
 
