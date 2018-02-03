@@ -9,7 +9,7 @@ RUN apt-key adv --keyserver keys.gnupg.net --recv-keys A3C4F0F979CAA22CDBA8F512E
 RUN echo "deb http://deb.torproject.org/torproject.org xenial main" >> /etc/apt/sources.list
 
 RUN apt update
-RUN install_clean weechat tor deb.torproject.org-keyring
+RUN install_clean weechat weechat-plugins tor deb.torproject.org-keyring
 
 RUN adduser --disabled-login --gecos weechat weechat
 
