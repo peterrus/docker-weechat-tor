@@ -34,3 +34,6 @@ docker run -idt --name weechat --restart=always --volume /<somepath>:/weechat-da
 Attach with ```docker attach weechat```
 
 Detach again with *ctrl+p* *ctrl+q*
+
+**Recommended relay clients**
+Android: Weechat nightly (stable hasn't been updated for a very long time): [Google Play](https://play.google.com/store/apps/details?id=com.ubergeek42.WeechatAndroid.dev) [Direct APK download](http://weechat-android.ubergeek42.com/)
