@@ -1,7 +1,5 @@
 FROM phusion/baseimage:0.10.0
 
-RUN apt -y upgrade
-
 RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 11E9DE8848F2B65222AA75B8D1820DB22A11534E
 RUN echo "deb https://weechat.org/ubuntu xenial main" >> /etc/apt/sources.list
 
@@ -9,7 +7,9 @@ RUN apt-key adv --keyserver keys.gnupg.net --recv-keys A3C4F0F979CAA22CDBA8F512E
 RUN echo "deb http://deb.torproject.org/torproject.org xenial main" >> /etc/apt/sources.list
 
 RUN apt update
-RUN install_clean weechat weechat-plugins tor deb.torproject.org-keyring
+RUN apt -y upgrade
+# Modify to add more plugins
+RUN install_clean weechat weechat-plugins weechat-python tor deb.torproject.org-keyring
 
 RUN adduser --disabled-login --gecos weechat weechat
 
